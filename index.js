@@ -24,6 +24,7 @@ export default class Ripple extends PureComponent {
     rippleSequential: false,
     rippleFades: true,
     disabled: false,
+    useNativeDriver: true,
 
     onRippleAnimation: (animation, callback) => animation.start(callback),
   };
@@ -41,7 +42,7 @@ export default class Ripple extends PureComponent {
     rippleSequential: PropTypes.bool,
     rippleFades: PropTypes.bool,
     disabled: PropTypes.bool,
-
+    useNativeDriver: PropTypes.bool.isRequired,
     onRippleAnimation: PropTypes.func,
   };
 
